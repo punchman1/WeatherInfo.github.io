@@ -27,16 +27,16 @@ const server = http.createServer((req,res)=>{
      {
         requests('https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=2bed6af06728f4fa001b33a4b335035a')
 .on('data', (chunk)=> { //data event in streams
-     const objdata=JSON.parse(chunk);
-     const arrData=[objdata];
+     const obj_data=JSON.parse(chunk);
+     const arrData=[obj_data];
      // console.log(arrData);
-     const realTimeData=arrData.map(val => replaceVal(homeFile,val)).join("");
+     const real_Time_Data=arrData.map(val => replaceVal(homeFile,val)).join("");
      // console.log(arrData[0].main.temp);
-     res.write(realTimeData);
+     res.write(real_Time_Data);
      // console.log(realTimeData);
 })
 .on('end', (err)=> {
-  if (err) return console.log('connection closed due to errors', err);
+  if (err) return console.log('connection closed ', err);
      res.end();
 //   console.log('end');
 });
