@@ -44,8 +44,8 @@
       .box {
         width: 20vw;
         height: 60vh;
-        border-radius: 0.5rem;
-        box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+        border-radius: 0.6rem;
+        box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.3);
         background: #a5bbdd;
         position: relative;
         overflow: hidden;
@@ -59,13 +59,13 @@
         position: absolute;
         top: 120%;
         left: 50%;
-        background: white;
         width: 50rem;
         height: 50rem;
         margin-left: -25rem;
         margin-top: -25rem;
         transform-origin: 50% 48%;
         border-radius: 43%;
+        background: white;
         animation: drift 3000ms infinite linear;
         z-index: 1;
       }
@@ -111,9 +111,10 @@
 
       .location {
         margin-top: 1.5rem;
-        text-align: center;
         font-weight: 800;
         font-size: 3rem;
+        text-align: center;
+      
       }
 
       .fa-street-view {
@@ -132,32 +133,36 @@
       #date {
         text-align: center;
         margin-top: 0.5rem;
-        color: #57606f;
         font-size: 1.2rem;
         font-weight: 300;
+        color: #57606f;
+       
         text-transform: uppercase;
       }
 
       .temp {
         margin-top: 2.5rem;
-        text-align: center;
         font-size: 3rem;
+        text-align: center;
+        
       }
 
       .tempmin_max {
-        text-align: center;
-        margin-top: 0.3rem;
         font-weight: 300;
         font-size: 1.2rem;
         color: #57606f;
+        text-align: center;
+        margin-top: 0.3rem;
+     
       }
 
       #weathercon {
         height: 55%;
         display: flex;
-        justify-content: center;
         align-items: center;
         font-size: 3em;
+        justify-content: center;
+        
       }
 
       #weathercon .fas {
